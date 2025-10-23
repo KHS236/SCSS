@@ -1,0 +1,77 @@
+
+// 01 ----------------------------------------------------------
+// 계층 구조
+$size : 300px;
+
+.container{
+    border: 3px solid orange;
+    width: $size + 150;
+    ul{
+        border : 2px solid green;
+        margin: 5px;
+        padding: 10px;
+        list-style: none;
+
+        li{
+            min-height: 35px;
+            border: 1px solid red;
+            width: 200px;
+            margin: 5px;
+        }
+        .age{
+            color: blue;
+
+        }
+        .name{
+            font-weight: 900;
+            color: violet;
+        }
+
+    }
+}
+
+
+// 02 ------------------------------------------------------
+// 상위 선택자
+
+.container2{
+    .btn{
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border: 1px solid lightgray;
+        color: darkgray;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &.active{
+            color: white;
+            background-color: orange;
+        }
+    }
+    .fs{
+        &-small{font-size : .7rem}
+        &-medium{font-size : .9rem}
+        &-large{font-size : 1.5rem}
+    }
+
+}
+
+// 03 --------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
